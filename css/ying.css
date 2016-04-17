@@ -3,3 +3,31 @@
   border: 1px solid #444;
   background-color: #15856B;
 }
+.box_main {
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #B589EF;
+  overflow: hidden;
+}
+.box_grp {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid #333;
+}
+.box_one {
+  margin-left: 100px;
+  background-color: #ABF2FB;
+  float: left;
+}
+.box_two {
+  margin-left: 230px;
+  background-color: #F1A3C5;
+  float: left;
+}
+.box_three {
+  margin-left: 681px;
+  background-color: #A6DFDE;
+}

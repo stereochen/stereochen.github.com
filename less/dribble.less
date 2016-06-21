@@ -39,7 +39,7 @@
     width: 93%;
     height: 100%;
     margin-left: 7%;
-    background-image: url(../img/eyes_bg.jpg);
+    background-image: url(../img/Resume_000.jpg);
     background-size: cover;
 }
 
@@ -100,6 +100,147 @@
     line-height: 82px; 
 
 }
+
+
+//------  導航列左側文字的註解對話框 Tooltip_2  -------//
+
+
+// 未滑過滑鼠樣子
+.tooltip_2{
+
+    position: relative;
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    // line-height: 72px; ----> 改這邊 會因為a底下有兩種字 兩個都會連動到
+
+// 要裝Less才可以這樣寫
+    span{
+
+        // color: #fff; ------> 父元素已經給予白色的血統
+        line-height: 72px;
+        transition: color .2s ease-in-out;
+
+    }
+
+
+    span:hover{
+
+        color: #9AD5AD;
+
+    }
+
+}
+
+// 古老CSS正規寫法
+// .tooltip_2 span{
+
+//     line-height: 72px;
+
+
+// }
+
+
+
+
+
+// 三角形
+.tooltip_2:hover:before{
+
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+
+    
+
+}
+
+// tooltip
+.tooltip_2:hover:after{
+
+    position: absolute;
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: 26px;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    z-index: 98;
+    width: 220px;
+    color: #fff;
+
+}
+
+
+
+//------  導航列左側文字的註解對話框 Tooltip_3  -------//
+
+.tooltip_3{
+
+    position: relative;
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+
+    span{
+
+        transition: color .2s ease-in-out;
+
+    }
+
+    span:hover{
+
+        color:#9AD5AD; 
+
+    }
+
+}
+
+
+// 三角形
+.tooltip_3:hover:before{
+
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    
+
+}
+
+// tooltip
+.tooltip_3:hover:after{
+
+    position: absolute;
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: 26px;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    z-index: 98;
+    width: 220px;
+    color: #fff;
+
+}
+
+
+
+
+
+
 
 
 //------  綠色主題字  -------//
@@ -187,7 +328,7 @@
     font-size: 20px;
     color: white;
     cursor: pointer;
-
+    transition: margin .5s ease-in;
 
 
 }
